@@ -9,11 +9,12 @@ body {
 	}
 
 	a {
-		color: #aaa;
+		color: rgb(224, 221, 139);
 		text-decoration: none;
 	}
 
 	a.active {
-		color: rgb(224, 207, 81);
+		color: rgb(222, 200, 36);
+		text-shadow: 3px 3px 3px black;
 	}
 }
