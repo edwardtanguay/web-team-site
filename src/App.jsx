@@ -1,7 +1,7 @@
 import './App.scss';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageMembers } from './pages/PageMembers';
-import { PageRad } from './pages/PageRad';
+import { PageResearch } from './pages/PageResearch';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -11,12 +11,12 @@ function App() {
 			<hr />
 			<NavLink to="/welcome">Welcome</NavLink> |{' '}
 			<NavLink to="/members">Members</NavLink> |{' '}
-			<NavLink to="/rad">Research</NavLink>
+			<NavLink to="/research">Research</NavLink>
 			<hr />
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/members" element={<PageMembers />} />
-				<Route path="/rad" element={<PageRad />} />
+				<Route path="/research" element={<PageResearch />} />
 				<Route path="/" element={<Navigate to="/welcome" replace />}/>
 			</Routes>
 		</div>

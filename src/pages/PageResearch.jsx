@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-export const PageRad = () => {
+export const PageResearch = () => {
 	return (
-		<div className="page_rad">
+		<div className="page_research">
 			<p>These are new tools, libraries, etc. that members are experimenting with. Projects here are generally not complete. For that, see <NavLink to="/welcome">Welcome</NavLink>.</p>
 		</div>
 	)
