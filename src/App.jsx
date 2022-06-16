@@ -7,7 +7,7 @@ import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 function App() {
 	return (
 		<div className="App">
-			<h1>Personal Site</h1>
+			<h1>Web Team 001</h1>
 			<hr />
 			<NavLink to="/welcome">Welcome</NavLink> |{' '}
 			<NavLink to="/books">Books</NavLink> |{' '}
