@@ -6,15 +6,16 @@ import { PageShowcases } from './pages/PageShowcases';
 import { PageMembersInfo } from './pages/members/PageMembersInfo';
 import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
+import { Separator } from './components/Separator';
 
 function App() {
 	return (
 		<div className="App">
 			<h1>Web Team 001</h1>
 			<hr />
-			<NavLink to="/welcome">Welcome</NavLink> |{' '}
-			<NavLink to="/members">Members</NavLink> |{' '}
-			<NavLink to="/research">Research</NavLink> |{' '}
+			<NavLink className="navlink" to="/welcome">Welcome</NavLink><Separator/> 
+			<NavLink to="/members">Members</NavLink><Separator/>
+			<NavLink to="/research">Research</NavLink><Separator/>
 			<NavLink to="/showcases">Showcases</NavLink>
 			<hr />
 			<Routes>
