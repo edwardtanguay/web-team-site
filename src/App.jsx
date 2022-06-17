@@ -12,12 +12,12 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Web Team 001</h1>
-			<hr />
+			<nav className="navMain">
 			<NavLink className="navlink" to="/welcome">Welcome</NavLink><Separator/> 
 			<NavLink to="/members">Members</NavLink><Separator/>
 			<NavLink to="/research">Research</NavLink><Separator/>
 			<NavLink to="/showcases">Showcases</NavLink>
-			<hr />
+			</nav>
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="members" element={<PageMembers />}>

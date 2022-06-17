@@ -3,10 +3,13 @@ import { Separator } from '../../components/Separator';
 
 export const PageMembers = () => {
 	return (
-		<nav className="page_members">
-			<NavLink to="info">Info</NavLink><Separator/>
-			<NavLink to="edward">Edward</NavLink>
+		<div className="page_members">
+			<nav className="navMembers">
+				<NavLink to="info">Info</NavLink>
+				<Separator />
+				<NavLink to="edward">Edward</NavLink>
+			</nav>
 			<Outlet />
-		</nav>
+		</div>
 	);
 };
