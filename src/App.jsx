@@ -1,8 +1,10 @@
 import './App.scss';
 import { PageWelcome } from './pages/PageWelcome';
-import { PageMembers } from './pages/PageMembers';
+import { PageMembers } from './pages/members/PageMembers';
 import { PageResearch } from './pages/PageResearch';
 import { PageShowcases } from './pages/PageShowcases';
+import { PageMembersInfo } from './pages/members/PageMembersInfo';
+import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -17,10 +19,20 @@ function App() {
 			<hr />
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
-				<Route path="/members" element={<PageMembers />} />
+				<Route path="members" element={<PageMembers />}>
+					<Route
+						path="/members"
+						element={<Navigate to="/members/info" replace />}
+					/>
+					<Route path="info" element={<PageMembersInfo />} />
+					<Route
+						path="/members/edward/*"
+						element={<PageMembersEdward />}
+					></Route>
+				</Route>
 				<Route path="/research" element={<PageResearch />} />
 				<Route path="/showcases" element={<PageShowcases />} />
-				<Route path="/" element={<Navigate to="/welcome" replace />}/>
+				<Route path="/" element={<Navigate to="/welcome" replace />} />
 			</Routes>
 		</div>
 	);
